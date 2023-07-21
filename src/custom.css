@@ -1,3 +1,5 @@
+/* Custom header name */
+
 #header-bottom-left {
     width: 1000px;
     top: calc(100px - 8px);
@@ -31,9 +33,13 @@
     width: 100vw
 }
 
+/* Flairs */
+
 .linkflairlabel {
     margin-left: 0.5em;
 }
+
+/* Link flair images (to be rewritten, refer "User Flair Images" flair) */
 
 /*
 
@@ -100,12 +106,13 @@
     padding-bottom: 0 !important;
 }
 
+/* Text to show on Reddit submission */
+
 /* 	body:lang(so) #text-field .roundfield-content > * {
 		display: none;
 	} */
 
-body:lang(so) #text-field .roundfield-content:before {
-    content: "You are doing a submission from the website. Please leave it as-is!";
+body:lang(so) #newlink .roundfield-content:before {
     font-size: 0.75em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -114,14 +121,12 @@ body:lang(so) #text-field .roundfield-content:before {
     padding: 0.5em;
 }
 
+body:lang(so) #text-field .roundfield-content:before {
+    content: "You are doing a submission from the website. Please leave it as-is!";
+}
+
 body:lang(so) #flair-field .roundfield-content:before {
     content: 'You are doing a submission from the website. Select either "New Entry" or "Edit Entry".';
-    font-size: 0.75em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    background: #ffd54f;
-    display: block;
-    padding: 0.5em;
 }
 
 body:lang(so) #text-field:focus-within .roundfield-content {
@@ -172,6 +177,8 @@ body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5
   		overflow-wrap: break-word;
 	} */
 
+/* To hidden */
+
 .thumbnail.self,
 .thumbnail.nsfw,
 .give-gold-button,
@@ -180,63 +187,34 @@ body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5
     visibility: hidden !important;
 }
 
+/* Fix unaligned navTop */
+
 .res.res-navTop #header-bottom-right {
     top: 0;
     right: 0;
 }
 
+/* Remove sidebar image (to be rewritten based on "Remove Sidebar Image" addon) */
+
 .side::before {
     display: none
-}
-
-.side .titlebox h1.redditname::before {
-    /* 		margin-top: calc(-16px - 72px) */
-}
-
-.side .titlebox h1.redditname {
-    top: calc(308px - 72px);
-}
-
-.titlebox span.subscribers {
-    top: calc(336px - 72px)
-}
-
-.titlebox .fancy-toggle-button {
-    top: calc(314px - 72px)
 }
 
 .side {
     margin-top: calc(282px - 72px)
 }
 
-.submit .morelink {
-    top: calc(442px - 72px)
-}
-
-#search {
-    top: calc(384px - 72px)
-}
-
-#header {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url(%%headerimg%%) 50% 50% / cover no-repeat;
-    height: 204px;
-    /* 196 + 8 */
-}
-
-.footer-parent {
-    padding: 16px;
-    height: 256px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(%%footer%%) 50% 0 / cover no-repeat;
-}
-
-#header .tabmenu::before {
-    background: rgba(0, 0, 0, 0.48);
-}
-
+/* .side .titlebox h1.redditname::before, */
+.side .titlebox h1.redditname,
+.titlebox span.subscribers,
+.titlebox .fancy-toggle-button,
+.submit .morelink,
+#search,
 .comments-page .side .linkinfo,
 .other-discussions-page .side .linkinfo {
-    top: calc(494px - 72px)
+    margin-top: -72px
 }
+
 
 .res.comments-page .side {
     margin-top: calc(414px - 72px);
@@ -253,6 +231,24 @@ body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5
     margin-top: calc(-2px);
     visibility: hidden;
     height: calc(98px + 72px);
+}
+
+/* Custom header and footer image adjustments */
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url(%%headerimg%%) 50% 50% / cover no-repeat;
+    height: 204px;
+    /* 196 + 8 */
+}
+
+#header .tabmenu::before {
+    background: rgba(0, 0, 0, 0.48);
+}
+
+.footer-parent {
+    padding: 16px;
+    height: 256px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(%%footer%%) 50% 0 / cover no-repeat;
 }
 
 /* Sidebar buttons */
