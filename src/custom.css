@@ -242,7 +242,7 @@ body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5
 }
 
 #header .tabmenu::before {
-    background: rgba(0, 0, 0, 0.48);
+    background: linear-gradient(90deg, rgba(0,0,0,.48) 90% , transparent);
 }
 
 .footer-parent {
@@ -306,4 +306,23 @@ body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5
     padding-right: 0;
     margin-left: 0;
     border-left: none;
+}
+
+.titlebox .md > p:first-of-type {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 920px;
+    padding-right: 16px;
+    margin: 0
+}
+
+.titlebox .md > p:first-of-type > a:first-of-type {
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem 4rem;
+    font-size: 125%;
 }

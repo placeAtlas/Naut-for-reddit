@@ -1,10 +1,8 @@
 {
-  "dependencies": {
-    "cssnano": "^6.0.1",
-    "postcss": "^8.4.26",
-    "postcss-cli": "^10.1.0"
-  },
   "scripts": {
-    "build": "cat src/*.css | npx postcss > \"Naut 4 - Main CSS File.css\""
+    "build": "cat src/*.css | npx lightningcss --minify --targets '>= 0.25%' > \"Naut 4 - Main CSS File.css\""
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.21.5"
   }
 }
