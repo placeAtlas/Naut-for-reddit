@@ -1,0 +1,88 @@
+/* Custom header name */
+
+#header .pagename a::after {
+    content: "The 2023 r/place Atlas";
+}
+
+/* Text to show on Reddit submission */
+
+/* body:lang(so) .flairoptionpane .flairsample-right#f0550ace-2675-11ee-8b18-ce8efc1a30b7,
+body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5a4c659 {
+    display: block !important
+} */
+
+/* Sidebar buttons */
+
+.titlebox .md>p:nth-of-type(1)>a:nth-of-type(1),
+.titlebox .md>blockquote:nth-of-type(1)>p>a,
+.titlebox .md>blockquote:nth-of-type(2)>p>a,
+.titlebox .md>blockquote:nth-of-type(3)>p>a {
+    display: block;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #0079d3;
+    border-radius: 2px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.titlebox .md>p:nth-of-type(1)>a:nth-of-type(1):hover,
+.titlebox .md>blockquote:nth-of-type(1)>p>a:hover,
+.titlebox .md>blockquote:nth-of-type(2)>p>a:hover,
+.titlebox .md>blockquote:nth-of-type(3)>p>a:hover {
+    background: #158be2;
+}
+
+.titlebox .md>blockquote:nth-of-type(1)>p,
+.titlebox .md>blockquote:nth-of-type(2)>p,
+.titlebox .md>blockquote:nth-of-type(3)>p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titlebox .md>blockquote:nth-of-type(1)>p>a,
+.titlebox .md>blockquote:nth-of-type(2)>p>a,
+.titlebox .md>blockquote:nth-of-type(3)>p>a {
+    flex-basis: 142px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.titlebox .md>blockquote:nth-of-type(1)>p>a:nth-child(2n),
+.titlebox .md>blockquote:nth-of-type(2)>p>a:nth-child(2n),
+.titlebox .md>blockquote:nth-of-type(3)>p>a:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+.titlebox .md>blockquote:nth-of-type(1),
+.titlebox .md>blockquote:nth-of-type(2),
+.titlebox .md>blockquote:nth-of-type(3) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    border-left: none;
+}
+
+.titlebox .md > p:first-of-type {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    min-width: 920px;
+    padding-right: 16px;
+    margin: 0
+}
+
+.titlebox .md > p:first-of-type > a:first-of-type {
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem 4rem;
+    font-size: 125%;
+}

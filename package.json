@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "build": "cat src/*.css | npx lightningcss --minify --targets '>= 0.25%' > \"Naut 4 - Main CSS File.css\""
+    "build:2023": "cat src/_naut_src.css src/custom.css src/specific_2023.css | npx lightningcss --minify --targets '>= 0.25%' > \"Naut 4 - Main CSS File.css\"",
+    "build:2022": "cat src/_naut_src.css src/custom.css src/specific_2022.css | npx lightningcss --minify --targets '>= 0.25%' > \"Naut 4 - Main CSS File.css\"",
+    "build": "npm run build:2023"
   },
   "devDependencies": {
     "lightningcss-cli": "^1.21.5"
