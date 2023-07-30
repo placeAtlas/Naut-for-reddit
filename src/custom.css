@@ -245,3 +245,13 @@ body:lang(so) #reddit-field {
     height: 256px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(%%footer%%) 50% 0 / cover no-repeat;
 }
+
+/* Fix bug on search */
+
+.search-page #search, .res .search-page #search {
+    /* position: absolute;
+    top: -146px;
+    left: 50%; */
+    -webkit-transform: translate(0%) !important;
+    transform: translate(0%) !important;
+}
