@@ -1,7 +1,12 @@
 {
   "scripts": {
-    "build:2023": "cat src/_naut_src.css src/custom.css src/specific_2023.css | npx lightningcss --minify --targets '>= 0.25%' > \"Naut 4 - Main CSS File.css\"",
-    "build:2022": "cat src/_naut_src.css src/custom.css src/specific_2022.css | npx lightningcss --minify --targets '>= 0.25%' > \"Naut 4 - Main CSS File.css\"",
+    "raw:base": "cat src/_source_note.css src/_naut_src.css src/custom.css > dist.css",
+    "raw:2023": "cat src/specific_2023.css >> dist.css",
+    "raw:2022": "cat src/specific_2022.css >> dist.css",
+    "minify": "npx lightningcss --minify --targets '>= 0.25%' dist.css -o dist.css && sed -i 's/reddit\\\\.com/reddit.com/g' dist.css",
+    "rename-dist": "mv dist.css \"Naut 4 - Main CSS File.css\"",
+    "build:2023": "npm run raw:base && npm run raw:2023 && npm run minify && npm run rename-dist",
+    "build:2022": "npm run raw:base && npm run raw:2022 && npm run minify && npm run rename-dist",
     "build": "npm run build:2023"
   },
   "devDependencies": {

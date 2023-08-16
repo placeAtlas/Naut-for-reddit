@@ -88,33 +88,33 @@ body:lang(so) .flairoptionpane .flairsample-right#c3722bf8-2694-11ee-a163-623ba5
 
 /* Flair colors, hide on ns.reddit.com */
 
-.linkflair-new .linkflairlabel,
-.linkflairlabel[title="New Entry"] {
+/* .linkflairlabel[title="New Entry"], */
+.linkflair-new .linkflairlabel {
     background-color: #0079d3; border-color: #0079d3;
 }
 
-.linkflair-edit .linkflairlabel,
-.linkflairlabel[title="Edit Entry"] {
+/* .linkflairlabel[title="Edit Entry"], */
+.linkflair-edit .linkflairlabel {
     background-color: #0dd3bb; border-color: #0dd3bb;
 }
 
-.linkflair-processed .linkflairlabel,
-.linkflairlabel[title="Processed Entry"] {
+/* .linkflairlabel[title="Processed Entry"], */
+.linkflair-processed .linkflairlabel {
     background-color: #bbbdbf; border-color: #bbbdbf;
 }
 
-.linkflair-rejected .linkflairlabel,
-.linkflairlabel[title="Rejected Entry"] {
+/* .linkflairlabel[title="Rejected Entry"], */
+.linkflair-rejected .linkflairlabel {
     background-color: #ff66ac; border-color: #ff66ac;
 }
 
-.linkflair-announcement .linkflairlabel,
-.linkflairlabel[title="Announcement"] {
+/* .linkflairlabel[title="Announcement"], */
+.linkflair-announcement .linkflairlabel {
     background-color: #ea0027; border-color: #ea0027;
 }
 
-.linkflair-discussion .linkflairlabel,
-.linkflairlabel[title="Discussion"] {
+/* .linkflairlabel[title="Discussion"], */
+.linkflair-discussion .linkflairlabel {
     background-color: #46d160; border-color: #46d160;
 }
 

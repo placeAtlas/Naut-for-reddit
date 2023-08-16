@@ -200,6 +200,10 @@ body:lang(so) #reddit-field {
     margin-top: calc(282px - 72px)
 }
 
+.search-page .side {
+    margin-top: calc(280px - 136px);
+}
+
 /* .side .titlebox h1.redditname::before, */
 .side .titlebox h1.redditname,
 .titlebox span.subscribers,
