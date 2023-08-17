@@ -259,3 +259,51 @@ body:lang(so) #reddit-field {
     -webkit-transform: translate(0%) !important;
     transform: translate(0%) !important;
 }
+
+/* Flair colors, hide on ns.reddit.com */
+
+.linkflairlabel[title^="New"],
+.linkflair-new .linkflairlabel {
+    background-color: #0079d3 !important;
+    border-color: #0079d3 !important;
+}
+
+.linkflairlabel[title^="Edit"],
+.linkflair-edit .linkflairlabel {
+    background-color: #0dd3bb !important;
+    border-color: #0dd3bb !important;
+}
+
+.linkflairlabel[title^="Processed"],
+.linkflair-processed .linkflairlabel {
+    background-color: #bbbdbf !important;
+    border-color: #bbbdbf !important;
+}
+
+.linkflairlabel[title^="Rejected"],
+.linkflair-rejected .linkflairlabel {
+    background-color: #ff66ac !important;
+    border-color: #ff66ac !important;
+}
+
+.linkflairlabel[title="Announcement"],
+.linkflair-announcement .linkflairlabel {
+    background-color: #ea0027 !important;
+    border-color: #ea0027 !important;
+}
+
+.linkflairlabel[title="Discussion"],
+.linkflair-discussion .linkflairlabel {
+    background-color: #46d160 !important;
+    border-color: #46d160 !important;
+}
+
+[lang="nr"] .thing.linkflair-rejected,
+[lang="nr"] .thing.linkflair-processed, 
+[lang="ns"] .thing.linkflair-new,
+[lang="ns"] .thing.linkflair-edit,
+[lang="ns"] .thing.linkflair-processed,
+[lang="ns"] .thing.linkflair-rejected {
+/* 		background-color: black; */
+    display: none !important;
+}
